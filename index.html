@@ -32,15 +32,15 @@ button {
   color: white;
   cursor: pointer;
 }
-
 #certificate {
   width: 900px;
+  height: 636px; /* เท่ากับขนาดภาพ khop.png */
   margin: auto;
-  padding: 50px;
-  border: 15px solid #a97c2f;
-  background: url('khop.png') repeat;
+  padding: 0; /* อย่าให้ padding ดันเนื้อหาหลุดกรอบ */
+  border: none;
+  background: url('khop.png') no-repeat center center;
+  background-size: 100% 100%;
   position: relative;
-  background-color: #fffdf7;
 }
 
 #certificate .logo {
