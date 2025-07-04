@@ -8,12 +8,12 @@
     body {
       font-family: 'Sarabun', sans-serif;
       background-color: #fdf6f0;
-      padding: 20px;
       margin: 0;
+      padding: 20px;
+      text-align: center;
     }
 
     .form-section {
-      text-align: center;
       margin-bottom: 40px;
     }
 
@@ -37,59 +37,60 @@
     }
 
     #certificate {
-      width: 900px;
-      height: 636px;
+      width: 1152px;
+      height: 768px;
       margin: auto;
-      padding-top: 200px; /* ขยับเนื้อหาและโลโก้ลง */
       background: url('khop1.png') no-repeat center center;
-      background-size: 100% 100%;
+      background-size: cover;
       position: relative;
-      text-align: center;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 60px 40px 60px; /* top-right-bottom-left */
+      box-sizing: border-box;
     }
 
-    #certificate .logo {
-      display: block;
-      margin: 0 auto 30px auto; /* เพิ่มช่องว่างด้านล่างโลโก้ */
-      width: 80px;
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      color: #a0281c;
       font-size: 36px;
-      margin-bottom: 10px;
+      color: #a0281c;
+      margin: 10px 0;
     }
 
     h2 {
       font-size: 22px;
       color: #800000;
-      margin-top: 0;
-      margin-bottom: 30px;
+      margin: 5px 0 20px 0;
     }
 
     .content {
       font-size: 20px;
       color: #333;
-      margin-top: 20px;
-      line-height: 1.8;
+      line-height: 1.6;
+      max-width: 800px;
     }
 
     #nameArea {
       color: #b03030;
       font-size: 26px;
       font-weight: bold;
-      margin: 20px 0;
-      display: inline-block;
+      margin: 10px 0 20px 0;
     }
 
     .footer {
-      text-align: center;
-      margin-top: 40px;
+      margin-top: 20px;
       font-size: 18px;
+      color: #555;
     }
   </style>
 </head>
 <body>
-
   <div class="form-section">
     <h2>สร้างใบอนุโมทนาบัตร</h2>
     <input type="text" id="donorName" placeholder="กรอกชื่อผู้รับอนุโมทนา">
@@ -98,13 +99,12 @@
   </div>
 
   <div id="certificate">
-    <img src="https://jaroenta1616.github.io/Cert/logo.png" alt="โลโก้ศาลเจ้า" class="logo">
+    <img src="logo.png" alt="โลโก้ศาลเจ้า" class="logo">
     <h1>ใบอนุโมทนาบัตร</h1>
     <h2>ศาลเจ้าปึงเถ่ากงม่า ขอนแก่น</h2>
-
     <div class="content">
-      ขอมอบใบอนุโมทนานี้ให้แก่ <br>
-      <div id="nameArea">ชื่อผู้รับอนุโมทนา</div><br>
+      ขอมอบใบอนุโมทนานี้ให้แก่
+      <div id="nameArea">ชื่อผู้รับอนุโมทนา</div>
       เพื่อแสดงความขอบคุณในการร่วมบริจาคในกิจกรรมของศาลเจ้า<br>
       ขออำนาจปึงเถ่ากงปึงเถ่าม่า จงดลบันดาลให้ท่าน<br>
       เจริญด้วย อายุ วรรณะ สุขะ พละ และประสบสิ่งอันพึงปรารถนาเทอญ
@@ -113,20 +113,21 @@
 
   <script>
     function generateCertificate() {
-      const name = document.getElementById("donorName").value.trim();
-      document.getElementById("nameArea").textContent = name || "ชื่อผู้รับอนุโมทนา";
+      const name = document.getElementById("donorName").value;
+      document.getElementById("nameArea").innerText = name || "ชื่อผู้รับอนุโมทนา";
     }
 
     function downloadImage() {
       html2canvas(document.querySelector("#certificate")).then(canvas => {
         const link = document.createElement("a");
-        link.download = "certificate.png";
-        link.href = canvas.toDataURL("image/png");
+        link.download = "ใบอนุโมทนาบัตร.png";
+        link.href = canvas.toDataURL();
         link.click();
       });
     }
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 
+  <!-- ต้องใส่ library html2canvas -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </body>
 </html>
