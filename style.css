@@ -5,16 +5,20 @@ body {
   padding: 20px;
 }
 #certificate {
-  width: 800px;
+  width: 1000px;
+  height: 700px;
   margin: 0 auto;
   padding: 40px;
-  background-color: #fffaf4;
- background-image: url("khop.png?v=2"); /* ใช้ภาพ khop.png ที่อยู่ในโฟลเดอร์เดียวกัน */
+
+  background-color: transparent;
+  background-image: url("khop.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  border: 10px double #b30000;
+  background-size: 100% 100%; /* << ตรงนี้สำคัญ */
+  background-position: center;
+
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   position: relative;
+}
 }
 }
 
