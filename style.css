@@ -11,7 +11,10 @@ body {
   width: 1000px;
   height: 700px;
   margin: 0 auto;
-  padding: 40px;
+  padding-top: 80px; /* เพิ่มช่องว่างด้านบนให้ทั้งหมดขยับลง */
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
   background-color: transparent;
   background-image: url("khop.png"); /* ภาพขอบลายจีน */
   background-repeat: no-repeat;
@@ -23,8 +26,8 @@ body {
 
 /* โลโก้ */
 .logo {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 20px;  /* ยิ่งตัวเลขมาก โลโก้ยิ่งเลื่อนลง */
+  margin-bottom: 30px;
   width: 120px;
 }
 
@@ -32,7 +35,7 @@ body {
 h1 {
   color: #b30000;
   font-size: 36px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-top: 10px;
 }
 
@@ -47,7 +50,7 @@ h2 {
 .content {
   font-size: 20px;
   color: #333;
-  margin-top: 20px;
+  margin-top: 30px;
   line-height: 1.8;
 }
 
@@ -56,18 +59,13 @@ h2 {
   font-weight: bold;
   color: #cc0000;
   font-size: 26px;
-  margin: 20px 0;
+  margin: 30px 0; /* เพิ่มช่องว่างระหว่างข้อความกับชื่อ */
   display: inline-block;
 }
 
 /* ท้ายใบ */
 .footer {
   margin-top: 40px;
-  font-size: 18px;
-  color: #555;
-}
-.footer {
-  margin-top: 30px;
   font-size: 18px;
   color: #555;
 }
