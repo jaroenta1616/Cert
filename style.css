@@ -4,18 +4,18 @@ body {
   background-color: #fdf6f0;
   padding: 20px;
 }
-
 #certificate {
   width: 800px;
   margin: 0 auto;
   padding: 40px;
   background-color: #fffaf4;
-  background-image: url("khop.png"); /* ใส่ภาพขอบที่ชื่อ khop.png */
+  background-image: url("khop.png"); /* ใช้ภาพ khop.png ที่อยู่ในโฟลเดอร์เดียวกัน */
   background-repeat: no-repeat;
   background-size: cover;
   border: 10px double #b30000;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   position: relative;
+}
 }
 
 h1 {
