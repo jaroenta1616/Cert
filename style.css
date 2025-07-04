@@ -8,12 +8,12 @@ body {
 }
 
 #certificate {
-  width: 1150px;
+  width: 850px;
   height: 768px;
   margin: auto;
-  background: url('khop_with_dragons.png') no-repeat center center;
+  background: url('khop1.png') no-repeat center center;
   background-size: cover;
-  padding: 80px 60px 40px 60px;
+  padding: 60px 50px 40px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,45 +23,45 @@ body {
 }
 
 .logo {
-  width: 400px;
+  width: 200px; /* เพิ่มขนาดโลโก้ */
   margin-bottom: 20px;
 }
 
 /* หัวข้อ */
 h1 {
   color: #b30000;
-  font-size: 36px;
+  font-size: 42px; /* ใหญ่ขึ้นจากเดิม */
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
 h2 {
   color: #800000;
-  font-size: 24px;
+  font-size: 28px; /* ใหญ่ขึ้นจากเดิม */
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
 /* เนื้อหากลาง */
 .content {
-  font-size: 20px;
+  font-size: 22px; /* ใหญ่ขึ้นจากเดิม */
   color: #333;
   margin-top: 30px;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
 /* ชื่อผู้รับ */
 #nameArea {
   font-weight: bold;
   color: #cc0000;
-  font-size: 40px;
-  margin: 30px 0; /* เพิ่มช่องว่างระหว่างข้อความกับชื่อ */
+  font-size: 30px; /* ใหญ่ขึ้นจากเดิม */
+  margin: 30px 0;
   display: inline-block;
 }
 
 /* ท้ายใบ */
 .footer {
   margin-top: 40px;
-  font-size: 18px;
+  font-size: 20px; /* ใหญ่ขึ้นจากเดิม */
   color: #555;
 }
