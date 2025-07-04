@@ -11,7 +11,8 @@ body {
   padding: 40px;
   margin: 30px auto;
   background-color: #fefaf3;
-  border: 10px double #b30000;background-image: url("https://jaroenta1616.github.io/Cert/khop.png");
+  border: 10px double #b30000;
+  background-image: url("khop.png");
   background-repeat: repeat;
   background-size: 300px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
