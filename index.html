@@ -1,36 +1,104 @@
-<!DOCTYPE html>
-<html lang="th">
+<!DOCTYPE html><html lang="th">
 <head>
   <meta charset="UTF-8">
   <title>ใบอนุโมทนาบัตร ศาลเจ้าปึงเถ่ากงม่า</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #fdf6f0;
+      padding: 20px;
+      margin: 0;
+    }.form-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 18px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a0281c;
+  color: white;
+  cursor: pointer;
+}
+
+#certificate {
+  width: 900px;
+  margin: auto;
+  padding: 50px;
+  border: 15px solid #a97c2f;
+  background: url('https://i.imgur.com/VZ39tnS.png') repeat;
+  position: relative;
+  background-color: #fffdf7;
+}
+
+#certificate .logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 120px;
+}
+
+h1 {
+  text-align: center;
+  color: #a0281c;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #800000;
+  margin-top: 0;
+}
+
+.content {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin-top: 30px;
+}
+
+#nameArea {
+  color: #b03030;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+  </style>
 </head>
 <body>
-  <h2>สร้างใบอนุโมทนาบัตร</h2>
-  <input type="text" id="donorName" placeholder="กรอกชื่อผู้รับอนุโมทนา">
-  <button onclick="generateCertificate()">สร้างใบอนุโมทนา</button>
-  <button onclick="downloadImage()">บันทึกเป็นภาพ</button>
+  <div class="form-section">
+    <h2>สร้างใบอนุโมทนาบัตร</h2>
+    <input type="text" id="donorName" placeholder="กรอกชื่อผู้รับอนุโมทนา">
+    <button onclick="generateCertificate()">สร้างใบอนุโมทนา</button>
+    <button onclick="downloadImage()">บันทึกเป็นภาพ</button>
+  </div>  <div id="certificate">
+    <img src="https://jaroenta1616.github.io/Cert/logo.png" alt="โลโก้ศาลเจ้า" class="logo"><h1>ใบอนุโมทนาบัตร</h1>
+<h2>ศาลเจ้าปึงเถ่ากงม่า ขอนแก่น</h2>
 
-  <div id="certificateArea">
-    <div id="certificate">
-      <div class="border">
-       <img src="logo.png" alt="โลโก้ศาลเจ้า" style="width: 180px; margin-bottom: 20px;">
-       <h1>ใบอนุโมทนาบัตร</h1>
-        <h2>ศาลเจ้าปึงเถ่ากงม่า ขอนแก่น</h2>
-        <div class="content">
-          ขอมอบใบอนุโมทนานี้ให้แก่<br>
-          <span id="nameArea">ชื่อผู้รับอนุโมทนา</span><br><br>
-          เพื่อแสดงความขอบคุณในการร่วมบริจาคในกิจกรรมของศาลเจ้า<br>
-          ขออำนาจปึงเถ่ากงปึงเถ่าม่า จงดลบันดาลให้ท่าน<br>
-          เจริญด้วย อายุ วรรณะ สุขะ พละ และสัมฤทธิ์ผลในสิ่งที่พึงปรารถนา
-        </div>
-        <div class="footer">ศาลเจ้าปึงเถ่ากงม่า ขอนแก่น</div>
-      </div>
-    </div>
-  </div>
+<div class="content">
+  ขอมอบใบอนุโมทนานี้ให้แก่ <br>
+  <div id="nameArea">ชื่อผู้รับอนุโมทนา</div><br>
+  เพื่อแสดงความขอบคุณในการร่วมบริจาคในกิจกรรมของศาลเจ้า<br>
+  ขออำนาจปึงเถ่ากงปึงเถ่าม่า จงดลบันดาลให้ท่าน<br>
+  เจริญด้วย อายุ วรรณะ สุขะ พละ และสัม
 
-  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+  
