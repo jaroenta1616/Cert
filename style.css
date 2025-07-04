@@ -1,62 +1,49 @@
 body {
-  font-family: 'TH Sarabun New', sans-serif;
+  font-family: 'Sarabun', sans-serif;
   text-align: center;
-  background-color: #f8f0e3;
+  background-color: #fdf6f0;
+  padding: 20px;
 }
-#certificateArea {
-  margin: 20px auto;
-}
+
 #certificate {
   width: 800px;
+  margin: 0 auto;
   padding: 40px;
-  margin: 30px auto;
-  background-color: #fefaf3;
+  background-color: #fffaf4;
+  background-image: url("khop.png"); /* ใส่ภาพขอบที่ชื่อ khop.png */
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 10px double #b30000;
-  background-image: url("khop.png");
-  background-repeat: repeat;
-  background-size: 300px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   position: relative;
-  font-family: 'Sarabun', sans-serif;
 }
-}
-.border {
-  padding: 20px;
-  border: 6px solid #c0392b; no
-  background: #fff8f2;
-}
-.logo {
-  width: 120px;
-  margin-top: 10px;
-}
+
 h1 {
-  font-size: 48px;
-  color: #b22222;
+  color: #b30000;
+  font-size: 36px;
   margin-bottom: 0;
 }
+
 h2 {
+  color: #800000;
   font-size: 24px;
-  color: #8b0000;
-  margin-top: 5px;
+  margin-top: 10px;
 }
+
 .content {
-  font-size: 28px;
-  margin-top: 30px;
-  line-height: 1.8;
-  color: #222;
-}
-#nameArea {
-  font-size: 36px;
-  color: #b22222;
-  font-weight: bold;
-}
-.footer {
-  margin-top: 40px;
-  font-size: 22px;
+  font-size: 20px;
   color: #333;
+  margin-top: 20px;
 }
-input, button {
-  margin: 10px;
-  padding: 10px;
+
+#nameArea {
+  font-weight: bold;
+  color: #cc0000;
+  font-size: 24px;
+}
+
+.footer {
+  margin-top: 30px;
   font-size: 18px;
+  color: #555;
 }
