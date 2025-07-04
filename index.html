@@ -38,9 +38,9 @@
 
     #certificate {
       width: 900px;
-      height: 636px; /* เท่ากับขนาดภาพ khop.png */
+      height: 636px;
       margin: auto;
-      padding-top: 50px; /* ดันโลโก้และข้อความลงมา */
+      padding-top: 60px; /* ขยับเนื้อหาและโลโก้ลง */
       background: url('khop.png') no-repeat center center;
       background-size: 100% 100%;
       position: relative;
@@ -82,9 +82,9 @@
     }
 
     .footer {
+      text-align: center;
       margin-top: 40px;
       font-size: 18px;
-      color: #555;
     }
   </style>
 </head>
@@ -98,7 +98,7 @@
   </div>
 
   <div id="certificate">
-    <img src="logo.png" alt="โลโก้ศาลเจ้า" class="logo">
+    <img src="https://jaroenta1616.github.io/Cert/logo.png" alt="โลโก้ศาลเจ้า" class="logo">
     <h1>ใบอนุโมทนาบัตร</h1>
     <h2>ศาลเจ้าปึงเถ่ากงม่า ขอนแก่น</h2>
 
@@ -110,6 +110,23 @@
       เจริญด้วย อายุ วรรณะ สุขะ พละ และประสบสิ่งอันพึงปรารถนาเทอญ
     </div>
   </div>
+
+  <script>
+    function generateCertificate() {
+      const name = document.getElementById("donorName").value.trim();
+      document.getElementById("nameArea").textContent = name || "ชื่อผู้รับอนุโมทนา";
+    }
+
+    function downloadImage() {
+      html2canvas(document.querySelector("#certificate")).then(canvas => {
+        const link = document.createElement("a");
+        link.download = "certificate.png";
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+      });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 
 </body>
 </html>
