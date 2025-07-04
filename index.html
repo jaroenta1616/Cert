@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ใบอนุโมทนาบัตร ศาลเจ้าปึงเถ่ากงม่า</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>สร้างใบอนุโมทนาบัตร</h2>
+  <input type="text" id="donorName" placeholder="กรอกชื่อผู้รับอนุโมทนา">
+  <button onclick="generateCertificate()">สร้างใบอนุโมทนา</button>
+  <button onclick="downloadImage()">บันทึกเป็นภาพ</button>
+
+  <div id="certificateArea">
+    <div id="certificate">
+      <div class="border">
+        <img src="https://raw.githubusercontent.com/openai/icons/main/red_chinese_emblem.png" class="logo">
+        <h1>ใบอนุโมทนาบัตร</h1>
+        <h2>ศาลเจ้าปึงเถ่ากงม่า ขอนแก่น</h2>
+        <div class="content">
+          ขอมอบใบอนุโมทนานี้ให้แก่<br>
+          <span id="nameArea">ชื่อผู้รับอนุโมทนา</span><br><br>
+          เพื่อแสดงความขอบคุณในการร่วมบริจาคในกิจกรรมของศาลเจ้า<br>
+          ขออำนาจปึงเถ่ากงปึงเถ่าม่า จงดลบันดาลให้ท่าน<br>
+          เจริญด้วย อายุ วรรณะ สุขะ พละ และสัมฤทธิ์ผลในสิ่งที่พึงปรารถนา
+        </div>
+        <div class="footer">ศาลเจ้าปึงเถ่ากงม่า ขอนแก่น</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

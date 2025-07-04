@@ -1,0 +1,56 @@
+body {
+  font-family: 'TH Sarabun New', sans-serif;
+  text-align: center;
+  background-color: #f8f0e3;
+}
+#certificateArea {
+  margin: 20px auto;
+}
+#certificate {
+  width: 900px;
+  margin: auto;
+  padding: 40px;
+  background-color: #fffaf3;
+  border: 10px double #b22222;
+  position: relative;
+}
+.border {
+  padding: 20px;
+  border: 6px solid #c0392b;
+  background: #fff8f2;
+}
+.logo {
+  width: 120px;
+  margin-top: 10px;
+}
+h1 {
+  font-size: 48px;
+  color: #b22222;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 24px;
+  color: #8b0000;
+  margin-top: 5px;
+}
+.content {
+  font-size: 28px;
+  margin-top: 30px;
+  line-height: 1.8;
+  color: #222;
+}
+#nameArea {
+  font-size: 36px;
+  color: #b22222;
+  font-weight: bold;
+}
+.footer {
+  margin-top: 40px;
+  font-size: 22px;
+  color: #333;
+}
+input, button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
