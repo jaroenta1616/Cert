@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
   padding: 40px;
   background-color: #fffaf4;
- background-image: url("khop.png?v=1"); /* ใช้ภาพ khop.png ที่อยู่ในโฟลเดอร์เดียวกัน */
+ background-image: url("khop.png?v=2"); /* ใช้ภาพ khop.png ที่อยู่ในโฟลเดอร์เดียวกัน */
   background-repeat: no-repeat;
   background-size: cover;
   border: 10px double #b30000;
