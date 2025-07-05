@@ -135,5 +135,11 @@
 
   <!-- ต้องใส่ library html2canvas -->
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script>
+  function changeBackground() {
+    const bg = document.getElementById("backgroundSelector").value;
+    document.getElementById("certificate").style.backgroundImage = `url('${bg}')`;
+  }
+  </script>
 </body>
 </html>
